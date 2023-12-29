@@ -1,8 +1,8 @@
 import * as THREE from '../node_modules/three/build/three.module.js';
 import { GUI } from '../node_modules/three/examples/jsm/libs/lil-gui.module.min.js';
 import World from './World.js';
-import ManifoldModule from '../node_modules/manifold-3d/manifold.js';
 import { OBJLoader } from '../node_modules/three/examples/jsm/loaders/OBJLoader.js';
+//import ManifoldModule from '../node_modules/manifold-3d/manifold.js';
 
 // Tetrahedralize the test shape
 const px = await PhysX();
@@ -49,8 +49,8 @@ export default class Main {
         this.world = new World(this);
 
         // Construct Test Shape
-        const manifold = await ManifoldModule();
-        manifold.setup();
+        //const manifold = await ManifoldModule();
+        //manifold.setup();
         ///** @type {manifold.Manifold} */
         //let sphere = new manifold.Manifold.sphere(0.6, 32);
         ///** @type {manifold.Manifold} */
